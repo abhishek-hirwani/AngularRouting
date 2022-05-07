@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-info">
+  <div class="container-fluid">
+    <!-- brand -->
+    <a class="navbar-brand" >Konverge.AI</a>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link" routerLink='home' routerLinkActive="active"  aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='about' routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='services' routerLinkActive="active">Services</a>
+        </li>
+
+        <!-- dropdown  -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink='courses' routerLinkActive="active" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" routerLink='java14' routerLinkActive="active">Java14</a></li>
+            <li><a class="dropdown-item" routerLink='angular10' routerLinkActive="active">Angular10</a></li>
+            <li><a class="dropdown-item" routerLink='nodejs' routerLinkActive="active">NodeJS</a></li>
+            <li><a class="dropdown-item" routerLink='expressJs' routerLinkActive="active">ExpressJS</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='contact' routerLinkActive="active" >Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+
+  <router-outlet></router-outlet>
+</div>
